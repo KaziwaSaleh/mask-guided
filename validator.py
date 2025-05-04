@@ -7,7 +7,7 @@ from torch.utils.data import DataLoader
 import torch.optim
 from torchmetrics.functional import peak_signal_noise_ratio, structural_similarity_index_measure
 import methods
-from SelfSup_Dataset import SelfSup_Dataset
+from selfSup_Dataset import SelfSup_Dataset
 
 
 def validator(opt):
