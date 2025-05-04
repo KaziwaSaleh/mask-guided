@@ -7,10 +7,11 @@ pip install -r requirements.txt
 ```
 
 # Dataset
-Follow the instructions in [this](https://github.com/XiaohangZhan/deocclusion/tree/master?tab=readme-ov-file) repo, or do the following:
+Follow the instructions in [this](https://github.com/XiaohangZhan/deocclusion/tree/master?tab=readme-ov-file) repository, or do the following:
 1. Download COCO2014 train and val images from [this](http://cocodataset.org/#download) link and unzip.
 2. Download COCOA annotations from [this link](https://drive.google.com/open?id=0B8e3LNo7STslZURoTzhhMFpCelE) and untar.
 3. Given that the images are dowloaded to COCOA folder with the following structure:
+   
    ```
    COCOA
       |-- train2014
@@ -19,7 +20,9 @@ Follow the instructions in [this](https://github.com/XiaohangZhan/deocclusion/tr
           |-- COCO_amodal_train2014.json
           |-- COCO_amodal_val2014.json
    ```
-   Create a soft link like below:
+
+   Create a soft link as follows:
+
    ```
    mkdir data
    cd data
@@ -27,7 +30,7 @@ Follow the instructions in [this](https://github.com/XiaohangZhan/deocclusion/tr
    ```
 
 # Training & Evaluate
-- To train the model execute:
+- To train the model, execute:
 ```
 sh train.sh
 ```
