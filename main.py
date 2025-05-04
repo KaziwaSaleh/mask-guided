@@ -1,10 +1,10 @@
 import argparse
 import os
 import yaml
+import trainer
+import validator
 import warnings
 warnings.filterwarnings("ignore")
-import Trainer
-import Validator
 
 
 def main(args):
@@ -18,9 +18,9 @@ def main(args):
         args.exp_path = os.path.dirname(args.config)
 
     if args.mode == 'training':
-        Trainer.trainer(args)
+        trainer.trainer(args)
     else:
-        Validator.validator(args)
+        validator.validator(args)
 
 
 if __name__ == '__main__':
